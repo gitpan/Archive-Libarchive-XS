@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 # ABSTRACT: libarchive callback functions
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 
 package
@@ -179,7 +179,7 @@ Archive::Libarchive::XS::Callback - libarchive callback functions
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 

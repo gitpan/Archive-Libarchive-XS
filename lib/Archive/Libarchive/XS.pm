@@ -12,7 +12,7 @@ use Encode qw( decode );
 BEGIN {
 
 # ABSTRACT: Perl bindings to libarchive via XS
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
   require XSLoader;
   XSLoader::load('Archive::Libarchive::XS', $VERSION);
@@ -224,7 +224,7 @@ Archive::Libarchive::XS - Perl bindings to libarchive via XS
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 
