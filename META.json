@@ -1,0 +1,58 @@
+{
+   "abstract" : "Perl bindings to libarchive via XS",
+   "author" : [
+      "Graham Ollis <plicease@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 5.012, CPAN::Meta::Converter version 2.133380",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Archive-Libarchive-XS",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Alien::Libarchive" : "0.18",
+            "ExtUtils::CChecker" : "0",
+            "Module::Build" : "0.3601"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Alien::Libarchive" : "0",
+            "Exporter::Tidy" : "0",
+            "ExtUtils::CChecker" : "0",
+            "Math::Int64" : "0.28",
+            "perl" : "5.008"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/plicease/archive-libarchive-xs/issues"
+      },
+      "homepage" : "http://perl.wdlabs.com/Archive-Libarchive-XS/",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/plicease/archive-libarchive-xs.git",
+         "web" : "https://github.com/plicease/archive-libarchive-xs"
+      }
+   },
+   "version" : "0.04"
+}
+
