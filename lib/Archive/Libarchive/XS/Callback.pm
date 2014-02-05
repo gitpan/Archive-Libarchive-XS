@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 # ABSTRACT: libarchive callback functions
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 
 package
@@ -53,7 +53,7 @@ foreach my $name (qw( open skip close seek ))
     sub _my$name
     {
       my \$archive = shift;
-      my \$status = eval { \$callbacks{\$archive}->[CB_$uc_name]->(\$archive, \$callbacks{\$archive}->[CB_DATA],@_) };
+      my \$status = eval { \$callbacks{\$archive}->[CB_$uc_name]->(\$archive, \$callbacks{\$archive}->[CB_DATA],\@_) };
       if(\$\@)
       {
         warn \$\@;
@@ -179,7 +179,7 @@ Archive::Libarchive::XS::Callback - libarchive callback functions
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 

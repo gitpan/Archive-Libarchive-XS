@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 # ABSTRACT: Libarchive private package
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 package
   Archive::Libarchive::XS;
@@ -283,7 +283,7 @@ Archive::Libarchive::XS::Common - Libarchive private package
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SEE ALSO
 
