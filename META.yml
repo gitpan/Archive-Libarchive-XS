@@ -26,4 +26,4 @@ resources:
   bugtracker: https://github.com/plicease/archive-libarchive-xs/issues
   homepage: http://perl.wdlabs.com/Archive-Libarchive-XS/
   repository: git://github.com/plicease/archive-libarchive-xs.git
-version: '0.07'
+version: '0.0701'
