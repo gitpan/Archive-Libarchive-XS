@@ -11,7 +11,7 @@ use Encode qw( decode );
 BEGIN {
 
 # ABSTRACT: Perl bindings to libarchive via XS
-our $VERSION = '0.0701'; # VERSION
+our $VERSION = '0.0800'; # VERSION
 
   unless($^O eq 'MSWin32')
   {
@@ -229,7 +229,7 @@ Archive::Libarchive::XS - Perl bindings to libarchive via XS
 
 =head1 VERSION
 
-version 0.0701
+version 0.0800
 
 =head1 SYNOPSIS
 

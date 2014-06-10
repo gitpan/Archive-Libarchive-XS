@@ -14,7 +14,7 @@ Archive::Libarchive::XS::Constant - Constants reference for libarchive perl bind
 
 =head1 VERSION
 
-version 0.0701
+version 0.0800
 
 =head1 SYNOPSIS
 

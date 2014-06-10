@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 # ABSTRACT: libarchive callback functions
-our $VERSION = '0.0701'; # VERSION
+our $VERSION = '0.0800'; # VERSION
 
 
 package
@@ -179,7 +179,7 @@ Archive::Libarchive::XS::Callback - libarchive callback functions
 
 =head1 VERSION
 
-version 0.0701
+version 0.0800
 
 =head1 SYNOPSIS
 
@@ -273,13 +273,16 @@ L<archive_read_open2|Archive::Libarchive::XS::Function#archive_read_open2>.
  my $mywrite = sub {
    my($archive, $data, $buffer) = @_;
    ...
-   return $status1;
+   return $bytes_written_or_status;
  };
  my $status2 = archive_write_open($archive, undef, $mywrite, undef);
 
 This callback is called whenever libarchive has data it wants to send
 to output.  The callback itself takes one additional argument, a 
 buffer containing the data to write.
+
+It should return the actual number of bytes written by you, or an
+status value for an error.
 
 =head2 skip
 

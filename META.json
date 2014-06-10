@@ -4,7 +4,7 @@
       "Graham Ollis <plicease@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.013, CPAN::Meta::Converter version 2.133380",
+   "generated_by" : "Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141170",
    "license" : [
       "perl_5"
    ],
@@ -26,6 +26,11 @@
             "Module::Build" : "0.3601"
          }
       },
+      "develop" : {
+         "requires" : {
+            "Devel::PPPort" : "3.23"
+         }
+      },
       "runtime" : {
          "requires" : {
             "Alien::Libarchive" : "0",
@@ -44,15 +49,15 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/plicease/archive-libarchive-xs/issues"
+         "web" : "https://github.com/plicease/Archive-Libarchive-XS/issues"
       },
-      "homepage" : "http://perl.wdlabs.com/Archive-Libarchive-XS/",
+      "homepage" : "http://perl.wdlabs.com/Archive-Libarchive-XS",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/plicease/archive-libarchive-xs.git",
-         "web" : "https://github.com/plicease/archive-libarchive-xs"
+         "url" : "git://github.com/plicease/Archive-Libarchive-XS.git",
+         "web" : "https://github.com/plicease/Archive-Libarchive-XS"
       }
    },
-   "version" : "0.0701"
+   "version" : "0.0800"
 }
 
